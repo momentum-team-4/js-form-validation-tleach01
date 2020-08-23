@@ -1,4 +1,10 @@
-console.log('Add validation!');
+
+
+let numOfDays = document.querySelector('#days').value
+
+
+
+
 
 
 function validateCardNumber(number) {
