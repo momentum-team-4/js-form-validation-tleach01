@@ -11,3 +11,6 @@ let cost = (numOfDays * 5)
 totalCost.innerHTML = 'Total cost is: ' + '$ ' + cost;
 }
 )
+
+
+
