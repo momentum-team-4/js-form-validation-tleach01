@@ -11,14 +11,14 @@ submit.addEventListener('click', function (event) {
 
 const today = new Date()
 
-function price() {
+function price () {
   const dayHolder = document.querySelector('#start-date').value
   starting = new Date(dayHolder + 'T00:00')
   const weekDay = starting.getDay()
   const numOfDays = document.querySelector('#days').value
   let priceAdjust = 0
-  for (i = 0; i < numOfDays; i++) {
-    const check = weekDay + i + 1
+  for (x = 0; x < numOfDays; x++) {
+    const check = weekDay + x + 1
     if ((check % 7) > 1) {
       priceAdjust += 5
     } else {
@@ -54,7 +54,7 @@ function luhnCheck (val) {
 }
 
 const creditCardNum = document.querySelector('#credit-card')
-creditCardNum.addEventListener('focusout', function () {
+creditCardNum.addEventListener('change', function () {
   if (validateCardNumber(document.querySelector('#credit-card').value)) {
     creditCardNum.setCustomValidity('')
   } else {
@@ -62,4 +62,6 @@ creditCardNum.addEventListener('focusout', function () {
   }
 })
 
-//  //
+//
+
+// parking date in future//
